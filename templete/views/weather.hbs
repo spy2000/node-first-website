@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>header}}
+    <title>weather</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+      {{>navbar}}
+        <div class="container mt-3">
+            <div class="row">
+                <div class=" col-12 col-md-10 mx-auto">
+                    <div class="input_box bg-secondary">
+                        <input type="text" id="inputVal" placeholder="enter your city name..." class=" w-75">
+                        <button class="btn btn-dark place" id="showData">search</button>
+                    </div>
+                    <div class="weather-data">
+                        <div class="curr-time">
+                            <p class="day" id="day">sunday</p>
+                            <div class="ajust">
+                            <p class="time" id="time">12:30 </p>
+                            <p class="perieds" id="perieds">PM</p>
+                            </div>
+                        </div>
+                        <div class="weather-info">
+                            <p id="city">Welcome to our site. please enter city name to se weather of your city</p>
+                            <div class="temp-data">
+                                <p id="curr-temp"></p>
+                                <p id="monsoon"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
